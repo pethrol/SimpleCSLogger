@@ -18,7 +18,7 @@ namespace App {
 
         private static void CreateFileIfNotExists() { // Also creating directory
             filename = DateTime.UtcNow.Date.ToShortDateString();
-            path = "logs/" + filename + ".log";
+            path = "logs/" + filename + ".log.json";
 
             if (!File.Exists(path)) {
                 Directory.CreateDirectory("logs");
